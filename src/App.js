@@ -9,12 +9,15 @@ import Card from './components/Card';
 
 
 function App() {
-  // console.log(data);
-
-  return (
-    <Card {...data} />
-
+  return(
+    <div>
+      {data.map((food)=>{
+        return <Card food={food}/>
+      })}
+    </div>
   )
+
+
 }
 
 export default App;
